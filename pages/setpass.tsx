@@ -22,9 +22,9 @@ const SetPass: NextPage = () => {
 
   };
 return (
-    <main>
+    <main className={styles.main}>
     <h1 className={styles.title2}>Set new password</h1>
-    <h6 className={styles.instruct1}>Your new password must be different from previous used passwords</h6>
+    <h6 className={styles.instruct1}>Your new password must be different from previous used passwords.</h6>
     <h6 className={styles.password1}>Password</h6>
     <input type={type} id="password" name="password" className={styles.passwordInput1} /> 
         <div className={styles.icon1}>

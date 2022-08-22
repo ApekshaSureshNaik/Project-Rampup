@@ -7,8 +7,8 @@ const MyImage = () => {
         className={styles.image}
         src={mypic}
         alt="Picture of the author"
-        width="901px"
-        height="795px"
+        width= "676px"
+        height= "901px"
       />
     )
   }
