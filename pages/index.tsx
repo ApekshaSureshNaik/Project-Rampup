@@ -33,11 +33,16 @@ const Home: NextPage = () => {
     <div className={styles.box}>
         <div className={styles.login1}>
         <label htmlFor="email" >Email</label></div>
-          <input type="text" className={styles.input1} id="email" name="email" />
+          <input type="email" className={styles.input1} id="email" name="email" required/>
          
           <div className={styles.login2}> 
           <label htmlFor="password">Password</label></div>
-          <input type={type} id="password" name="password" className={styles.input2} /> 
+          <input type={type} id="password" name="password" 
+               className={styles.input2} 
+               required 
+               pattern="[a-z0-9]{1,8}"
+               title="Password should be digits (0 to 9) or alphabets (a to z)."/> 
+
            <div className={styles.icon}>
            <FontAwesomeIcon
         icon={showPassword}
@@ -47,6 +52,7 @@ const Home: NextPage = () => {
                left:0.92, }}
                onClick={togglePasswordVisiblity}
       /></div>
+
          <div className={styles.pass}>
           <label>Minimun 8 characters with at least 1 number</label>
           </div>
