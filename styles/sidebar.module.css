@@ -1,8 +1,7 @@
 
 .sidebar:hover,nav.sidebar.expanded {
   width:250px;
-  overflow:hidden;
-
+  
   }
 
   .sidebar {
@@ -187,7 +186,7 @@ position: absolute;
 
 
 .container{
-  width: 1440px;
+  width: 150px;
   display:flex;
   transition: margin-left .5s;
   padding: 16px;
@@ -250,7 +249,7 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 13px 20px;
-
+color: black;
 width: 562.58px;
 height: 50px;
 
@@ -268,6 +267,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
+
 .button{
   display: flex;
   flex-direction: row;
@@ -294,10 +294,10 @@ flex-grow: 0;
 
 .adminbtn
 {
-  width: 59px;
+  width: 69px;
   height: 24px;
-
- font-family: 'Inter';
+  
+ font-family: 'Inter',sans-serif;
  font-style: normal;
  font-weight: 500;
  font-size: 16px;
@@ -308,11 +308,41 @@ flex-grow: 0;
 /* Style */
 
 color: #262626;
-
-
+background-color: white;
+border-radius: 6px;
 /* Inside auto layout */
-
+text-align: center;
 flex: none;
 order: 0;
 flex-grow: 0;
 }
+
+
+.page{
+  display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: left;
+padding: 0px;
+
+position: absolute;
+width: 1187px;
+height: 76px;
+left: 232px;
+top: 938px;
+
+/* white */
+
+background: #FFFFFF;
+}
+
+.cont{
+  position: absolute;
+width: 1339px;
+height: 792px;
+left: 81px;
+top: 222px;
+
+background: #FFFFFF;
+}
+

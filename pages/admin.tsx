@@ -44,19 +44,19 @@ const admin = () => {
   return (
     <>
     <Head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    
     </Head>
      <Sidebar />
      <div className={styles.container}>
      <div className={styles.box} >
-     
+      
      <FontAwesomeIcon icon={faBell} style={{
       position: "absolute",
       left: "15%",
       right: "15%",
       top: "10%",
       bottom: "10%",
-/* cool-gray/900 */
+      /* cool-gray/900 */
      color: "#111928",
      marginLeft: "1150px",
      backgroundColor: "white"
@@ -85,6 +85,7 @@ const admin = () => {
   
       <Paper>
       <Grid
+      
         rows={rows}
         columns={columns}
       >
@@ -98,7 +99,9 @@ const admin = () => {
         <TableHeaderRow />
         
         <TableSelection />
+        <div className={styles.page}>
         <PagingPanel />
+        </div>
       </Grid>
     </Paper>
 
