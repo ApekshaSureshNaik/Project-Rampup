@@ -22,10 +22,9 @@ const admin = () => {
         { name: 'roles', title: 'Roles' },
         { name: 'status', title: 'Status' },
         { name: 'options', title: 'Options' }
-      
       ];
-      
-       const rows = [
+
+   const rows = [
          { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
          { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
          { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
@@ -40,7 +39,6 @@ const admin = () => {
        
       ];
    
-      
   return (
     <>
     <Head>
@@ -78,24 +76,24 @@ const admin = () => {
            flexGrow:"0"
         }}>
           Admin Users</label>
-        <input type="text" className={styles.search} style={{alignContent:"center", justifyContent:"center", marginLeft:"250px", marginTop:"-45px" }} placeholder="Search"></input>
+        <input type="text" className={styles.search} 
+        style={{alignContent:"center", justifyContent:"center", marginLeft:"250px", marginTop:"-45px" }} 
+        placeholder="Search"></input>
         <button className={styles.button} style={{ marginLeft:"1290px", marginTop:"-20px"}}>+ Add User</button>
-      </div>
+       </div>
       <div className={styles.gridh}>
   
-      <Paper>
+      {/* <Paper>
       <Grid
-      
         rows={rows}
         columns={columns}
       >
-        <SelectionState
-        />
+        <SelectionState/>
         <Table />
         <PagingState
           defaultCurrentPage={0}
-          pageSize={10}
-        />
+          pageSize={10}/>
+
         <TableHeaderRow />
         
         <TableSelection />
@@ -103,13 +101,9 @@ const admin = () => {
         <PagingPanel />
         </div>
       </Grid>
-    </Paper>
-
-     
-      </div>
-      
-      </div>
-    
+    </Paper> */}
+      </div>  
+      </div> 
   </>
   )
 }
