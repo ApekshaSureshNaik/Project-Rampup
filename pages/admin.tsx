@@ -5,12 +5,12 @@ import styles from '../styles/sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import Head from 'next/head';
-import Paper from '@mui/material/Paper';
-import { Grid, PagingPanel, Table, TableHeaderRow, TableSelection,} from '@devexpress/dx-react-grid-material-ui';
-import { SelectionState } from '@devexpress/dx-react-grid';
-import {
-    PagingState
-  } from '@devexpress/dx-react-grid';
+// import Paper from '@mui/material/Paper';
+// import { Grid, PagingPanel, Table, TableHeaderRow, TableSelection,} from '@devexpress/dx-react-grid-material-ui';
+// import { SelectionState } from '@devexpress/dx-react-grid';
+// import {
+//     PagingState
+//   } from '@devexpress/dx-react-grid';
 
 
 const admin = () => {
