@@ -1,27 +1,33 @@
 
 .main {
-   position: absolute;
+   /* position: absolute;
    width:676px;
-   height:901px;  
+   height:901px;   */
+   position: relative;
+width: 1440px;
+height: 901px;
+
+background: #FFFFFF;
 }
 
 .h2{
 position: absolute;
-width: 127px;
-height: 54px;
-left: 834px;
+/* width: 127px;  */
+width:150px;
+height: 52px;
+left: 835px;
 top: 187px;
 font-family: 'Inter', sans-serif;
-font-style: Bold;
+font-style: normal;
 font-weight: 700;
 font-size: 43px;
 line-height: 52px;
 text-align: center;
 color: #212121;
-font-style: Bold;
+
 }
 
-.login1{
+.login1 {
 position: absolute;
 width: 32px;
 height: 15px;

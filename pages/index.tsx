@@ -6,6 +6,9 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css' 
 import {faEye, faEyeSlash} from "@fortawesome/free-solid-svg-icons"
+import axios from 'axios'
+
+
 
 const Home: NextPage = () => {
  const [type,setType] = useState('password')
@@ -22,15 +25,30 @@ const Home: NextPage = () => {
    
 
   };
+  const getlogin = async () =>{
+    const req = {
+      "user": {
+        "email":"pk@gmail.com",
+        "password":"XyZ@1998"
+      }
+    }
+    const response =await axios.post("https://floating-falls-55336.herokuapp.com/")
+    console.log(response)
+    return `{
+      "accessToken":"1234",
+      "refreshToken":"1234"
+    }`
+  }
   
   return (
-     <main className={styles.main}> 
+     <div className={styles.main}> 
        <MyImage />
           <div className={styles.h2}>
-      <h2>Log In</h2>
+      <label>Log In</label>
         </div>
       <form>
-    <div className={styles.box}>
+        <br></br>
+    {/* <div className={styles.box}>  */}
         <div className={styles.login1}>
         <label htmlFor="email" >Email</label></div>
           <input type="email" className={styles.input1} id="email" name="email" required/>
@@ -40,7 +58,7 @@ const Home: NextPage = () => {
           <input type={type} id="password" name="password" 
                className={styles.input2} 
                required 
-               pattern="[a-z0-9]{1,8}"
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}"
                title="Password should be digits (0 to 9) or alphabets (a to z)."/> 
 
            <div className={styles.icon}>
@@ -69,10 +87,10 @@ const Home: NextPage = () => {
           <Link href='/forgotpass'> 
           <a className={styles.link2}  style={{textDecoration: 'none'}}>Forgot Your Password?</a>
           </Link>
-         </div>
+         {/* </div>  */}
          </form>
      
-         </main>
+         </div>
   )
 }
 export default Home

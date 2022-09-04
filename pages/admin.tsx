@@ -3,51 +3,69 @@ import Sidebar from './sidebar'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css' 
 import styles from '../styles/sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faBell ,faEllipsisVertical, faXmark} from '@fortawesome/free-solid-svg-icons';
 import Head from 'next/head';
 // import Paper from '@mui/material/Paper';
 // import { Grid, PagingPanel, Table, TableHeaderRow, TableSelection,} from '@devexpress/dx-react-grid-material-ui';
 // import { SelectionState } from '@devexpress/dx-react-grid';
-// import {
+// import {<FontAwesomeIcon icon="fa-solid fa-arrow-down-arrow-up" />
 //     PagingState
 //   } from '@devexpress/dx-react-grid';
+import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
+import { Button } from '@mui/material'
+import { useRouter } from 'next/router'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css'
+import Modal from '../compnents/Modal'
 
+
+const columns: GridColDef[] = [
+  { field: 'id', headerName: 'User ID', width: 150 },
+  { field: 'name', headerName: 'Name', width: 150 },
+  { field: 'email', headerName: 'Email', width: 250 },
+  { field: 'phone', headerName: 'Phone', width: 200 },
+  { field: 'roles', headerName: 'Roles', width: 130,renderCell: (cellValues) =>{ return (
+    <Button variant="outlined" className={styles.adminbtn} 
+    // onClick={(event) => {
+    //   handleClick(event, cellValues);
+    // } }
+    > Admin </Button>
+    );}} ,
+  { field: 'status', headerName: 'Status', width: 130 },
+  { field: 'options', headerName: 'Options', width: 130 , renderCell: (cellValues) => { return (<FontAwesomeIcon icon={faEllipsisVertical} style={{position:'absolute', justifyContent:'center'}}/> )}}
+];
+
+
+const rows: GridRowsProp = [
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+  { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
+
+];
 
 const admin = () => {
-    const columns = [ 
-        { name: 'id', title: 'User ID' },
-        { name: 'name', title: 'Name' },
-        { name: 'email', title: 'Email' },
-        { name: 'phone', title: 'Phone' },
-        { name: 'roles', title: 'Roles' },
-        { name: 'status', title: 'Status' },
-        { name: 'options', title: 'Options' }
-      ];
-
-   const rows = [
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-         { id: 0, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',option:'' },
-       
-      ];
-   
+  const router = useRouter()
+  const [showModal,setShowModal] =useState(false)
+  
+ 
   return (
     <>
     <Head>
     
     </Head>
+      <div className={styles.container}>
      <Sidebar />
-     <div className={styles.container}>
+   
      <div className={styles.box} >
-      
+     <div id="modal-root"></div>
      <FontAwesomeIcon icon={faBell} style={{
       position: "absolute",
       left: "15%",
@@ -79,33 +97,35 @@ const admin = () => {
         <input type="text" className={styles.search} 
         style={{alignContent:"center", justifyContent:"center", marginLeft:"250px", marginTop:"-45px" }} 
         placeholder="Search"></input>
-        <button className={styles.button} style={{ marginLeft:"1290px", marginTop:"-20px"}}>+ Add User</button>
-       </div>
-      <div className={styles.gridh}>
-  
-      {/* <Paper>
-      <Grid
-        rows={rows}
-        columns={columns}
-      >
-        <SelectionState/>
-        <Table />
-        <PagingState
-          defaultCurrentPage={0}
-          pageSize={10}/>
+         
+        <button className={styles.button} style={{ marginLeft:"1290px", marginTop:"-20px"}} onClick={() => setShowModal(true)} >+ Add User</button>
+       
 
-        <TableHeaderRow />
-        
-        <TableSelection />
-        <div className={styles.page}>
-        <PagingPanel />
+       </div> 
+       
+        <Modal show={showModal} onClose={() => setShowModal(false)} > 
+
+         
+ </Modal>
+
+       
+
+      <div className={styles.gridh}> 
+      
+      <DataGrid 
+      sx={{width:"1339px",height:"650px" }}
+      rows={rows} 
+      columns={columns}
+      checkboxSelection
+      pageSize={10}
+      rowsPerPageOptions={[10,15.20]} 
+      pagination 
+       />
+      </div>
         </div>
-      </Grid>
-    </Paper> */}
-      </div>  
-      </div> 
   </>
   )
 }
 
 export default admin
+
