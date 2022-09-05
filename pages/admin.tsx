@@ -51,7 +51,7 @@ const rows: GridRowsProp = [
 
 ];
 
-const admin = () => {
+const Admin = () => {
   // const router = useRouter()
   const [showModal,setShowModal] =useState(false)
   
@@ -124,5 +124,5 @@ const admin = () => {
   )
 }
 
-export default admin
+export default Admin
 
