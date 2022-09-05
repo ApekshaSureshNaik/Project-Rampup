@@ -8,7 +8,7 @@ import Image from 'next/image'
 import logo from  '../images/logo.jpg'
 import Link from 'next/link'
 
-const sidebar: NextPage = () => {
+const Sidebar = () => {
  
   return (
     <>
@@ -84,7 +84,7 @@ const sidebar: NextPage = () => {
   )
 }
 
-export default sidebar
+export default Sidebar
 
 
 
