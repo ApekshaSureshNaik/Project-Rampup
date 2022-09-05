@@ -1,5 +1,6 @@
- import { Dropdown } from "@nextui-org/react";
+import { Dropdown } from "@nextui-org/react";
 import styles from "../styles/Modal.module.css";
+
 
  export default function DropDown() {
     return (

@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import styles from '../styles/sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell ,faEllipsisVertical, faXmark} from '@fortawesome/free-solid-svg-icons';
-import Head from 'next/head';
+
 // import Paper from '@mui/material/Paper';
 // import { Grid, PagingPanel, Table, TableHeaderRow, TableSelection,} from '@devexpress/dx-react-grid-material-ui';
 // import { SelectionState } from '@devexpress/dx-react-grid';
@@ -58,9 +58,7 @@ const Admin = () => {
  
   return (
     <>
-    <Head>
-    
-    </Head>
+   
       <div className={styles.container}>
      <Sidebar />
    

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css' 
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css' 
 import {faEye, faEyeSlash} from "@fortawesome/free-solid-svg-icons"
 import axios from 'axios'
 
@@ -41,6 +41,7 @@ const Home: NextPage = () => {
   }
   
   return (
+    
      <div className={styles.main}> 
        <MyImage />
           <div className={styles.h2}>
