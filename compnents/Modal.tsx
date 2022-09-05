@@ -39,7 +39,7 @@ const Modal = ({ show, onClose, children } :ModalProp) => {
         e.preventDefault();
         onClose();
       };
-      const [value, setValue] = useState()
+    
       
       const modalContent = show ? (
         <div className={styles.conatiner}>

@@ -13,8 +13,8 @@ import Head from 'next/head';
 //   } from '@devexpress/dx-react-grid';
 import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
 import { Button } from '@mui/material'
-import { useRouter } from 'next/router'
-import Popup from 'reactjs-popup';
+// import { useRouter } from 'next/router'
+// import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'
 import Modal from '../compnents/Modal'
 
@@ -52,7 +52,7 @@ const rows: GridRowsProp = [
 ];
 
 const admin = () => {
-  const router = useRouter()
+  // const router = useRouter()
   const [showModal,setShowModal] =useState(false)
   
  
@@ -103,10 +103,7 @@ const admin = () => {
 
        </div> 
        
-        <Modal show={showModal} onClose={() => setShowModal(false)} > 
-
-         
- </Modal>
+        <Modal show={showModal} onClose={() => setShowModal(false)} >    </Modal>
 
        
 
