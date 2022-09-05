@@ -1,129 +1,512 @@
-.container {
-  padding: 0 2rem;
-}
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   /* position: absolute;
+   width:676px;
+   height:901px;   */
+   position: relative;
+width: 1440px;
+height: 901px;
+
+background: #FFFFFF;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.h2{
+position: absolute;
+/* width: 127px;  */
+width:150px;
+height: 52px;
+left: 835px;
+top: 187px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 43px;
+line-height: 52px;
+text-align: center;
+color: #212121;
+
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.login1 {
+position: absolute;
+width: 32px;
+height: 15px;
+left: 834px;
+top: 292px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #212121;
+opacity: 0.4;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.input1 {
+position: absolute;
+width: 450px;
+height: 30px;
+left: 834px;
+top: 361px;
+color:black;
+border: none;
+font-family: 'Inter', sans-serif;
+border-bottom: solid 2px rgb(216, 216, 216);
+background-color: white;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.login2{
+position: absolute;
+width: 57px;
+height: 15px;
+left: 833px;
+top: 412px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #212121;
+opacity: 0.4;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.input2{
+position: absolute;
+width: 450px;
+height: 30px;
+left: 834px;
+top: 482px;
+font-family: 'Inter', sans-serif;
+border: none;
+color:black;
+border-bottom: solid 2px rgb(216, 216, 216);
+background-color: white;
 }
 
-.title,
-.description {
+.icon{ 
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  left: 1260px;
+  top: 482px;
+}
+
+.pass {
+position: absolute;
+width: 297px;
+height: 17px;
+left: 834px;
+top: 520px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #212121;
+opacity: 0.4;
+}
+
+.button{
+position: absolute;
+width: 450px;
+height: 50px;
+left: 834px;
+top: 561px;
+background-color: #9a9c9e;
+border-radius: 6px;
+border: none;
+color: white;
+font-family: 'Inter', sans-serif;
+ 
+
+}
+
+.link1{
+position: absolute;
+width: 328px;
+height: 34px;
+left: 895px;
+top: 621px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+color: #212121;
+}
+
+.link2{
+position: absolute;
+width: 170px;
+height: 17px;
+left: 987px;
+top: 693px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #1996fc;
+}
+
+/*Forgot Password*/
+.forgot {
+  position: absolute;
+  width: 408px;
+  height: 46px;
+  left: 495px;
+  top: 196px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #212121;
+}
+
+.instruct {
+  position: absolute;
+  width: 451px;
+  height: 58px;
+  left: 495px;
+  top: 247px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #212121;
+}
+.elabel {
+  position: absolute;
+  width: 451px;
+  height: 29px;
+  left: 495px;
+  top: 355px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #212121;
+  opacity: 0.4;
+}
+
+.einput {
+  position: absolute;
+  width: 450px;
+  height: 2px;
+  left: 496px;
+  top: 434px;
+  background: #212121;
+  opacity: 0.3;
+  border: none;
+  border-bottom: solid 2px grey;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.send {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  left: 496px;
+  top: 496px;
+  background: #1996FC;
+  border-radius: 6px;
+  border: none;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.cancel {
+  position: absolute;
+  width: 47px;
+  height: 17px;
+  left: 698px;
+  top: 572px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #555656;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.back {
+  position: absolute;
+  width: 34px;
+  height: 17px;
+  left: 88px;
+  top: 58px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A6A6A6;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+/*Check email*/
+
+.checkyourmail {
+  position: absolute;
+  width: 318px;
+  height: 46px;
+  left: 495px;
+  top: 196px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #212121;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.instruction {
+  position: absolute;
+  width: 451px;
+  height: 58px;
+  left: 495px;
+  top: 247px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #212121;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.ques {
+  position: absolute;
+  width: 451px;
+  height: 29px;
+  left: 495px;
+  top: 326px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #212121;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+/*Set New Password */
+.title2 {
+  position: absolute;
+  width: 338px;
+  height: 46px;
+  left: 495px;
+  top: 196px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #212121;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.instruct1 {
+  position: absolute;
+  width: 400px;
+  height: 58px;
+  left: 495px;
+  top: 247px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #212121;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.password1 {
+  position: absolute;
+  width: 57px;
+  height: 15px;
+  left: 495px;
+  top: 365px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #212121;
+  opacity: 0.4;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.passwordInput1 {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  left: 496px;
+  top: 418px;
+  color: black;
+  background: white;
+  opacity: 60%;
+  border:none;
+  border-bottom: solid 2px rgb(114, 112, 112);
+  font-family: 'Inter', sans-serif;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.icon1{ 
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 920px;
+  top: 418px;
+}
+.passwordrequire1 {
+  position: absolute;
+  width: 300px;
+  height: 17px;
+  left: 495px;
+  top: 455px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+  opacity: 0.4;
+}
+
+.password2 {
+  position: absolute;
+  width: 57px;
+  height: 15px;
+  left: 495px;
+  top: 518px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #212121;
+  opacity: 0.4;
+}
+
+.passwordInput2 {
+  position: absolute;
+  width: 450px;
+  height: 17px;
+  left: 496px;
+  top: 584px;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  background: #212121;
+  opacity: 0.6;
+  background: white;
+  border:none;
+  border-bottom: solid 2px rgb(73, 73, 73);
+}
+
+.icon2{ 
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 920px;
+  top: 570px;
+}
+.passwordrequire2 {
+  position: absolute;
+  width: 185px;
+  height: 17px;
+  left: 495px;
+  top: 608px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+  opacity: 0.4;
+}
+
+.ResetPassword {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  left: 496px;
+  top: 676px;
+  border:none;
+  background: #1996FC;
+  border-radius: 6px;
+}
+
+.cancel1 {
+  position: absolute;
+  width: 47px;
+  height: 17px;
+  left: 698px;
+  top: 746px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #555656;
+}
+
+
+
+
+/*Rest Password*/
+.passreset {
+  position: absolute;
+  width: 300px;
+  height: 46px;
+  left: 495px;
+  top: 196px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #212121;
+}
+
+.success {
+  position: absolute;
+  width: 451px;
+  height: 29px;
+  left: 495px;
+  top: 250px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #212121;
+}
+.continue {
+  border:none;
+  color: #ffffff;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  left: 496px;
+  top: 400px;
+  background: #1996FC;
+  box-shadow: 0px 0px 4px rgba(39, 41, 44, 0.16);
+  font-family: 'Inter', sans-serif;
+  border-radius: 6px;
 }
