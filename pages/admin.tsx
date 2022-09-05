@@ -32,7 +32,9 @@ const columns: GridColDef[] = [
     > Admin </Button>
     );}} ,
   { field: 'status', headerName: 'Status', width: 130 },
-  { field: 'options', headerName: 'Options', width: 130 , renderCell: (cellValues) => { return (<FontAwesomeIcon icon={faEllipsisVertical} style={{position:'absolute', justifyContent:'center'}}/> )}}
+  { field: 'options', headerName: 'Options', width: 130 , 
+  renderCell: (cellValues) => 
+  { return (<FontAwesomeIcon icon={faEllipsisVertical} style={{position:'absolute', justifyContent:'center'}}/> )}}
 ];
 
 
@@ -113,8 +115,7 @@ const Admin = () => {
       columns={columns}
       checkboxSelection
       pageSize={10}
-      rowsPerPageOptions={[10,15.20]} 
-      pagination 
+
        />
       </div>
         </div>

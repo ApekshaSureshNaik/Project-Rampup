@@ -119,7 +119,8 @@ marginLeft:"-370px"
   
        /></div>
        <button className={styles.buttonAdd} style={{marginTop:"145px", marginLeft:"-70px"}}>+ Add Another</button>
-  
+      <button className={styles.cancel} style={{marginTop:"-100px",marginLeft:"-370px"}}>Cancel</button> 
+      <button className={styles.invite} style={{marginTop:"-100px",marginLeft:"-370px"}}disabled>Invite User</button>
   </div> 
   
       <div>{children}</div>

@@ -347,3 +347,50 @@ top: 222px;
 background: #FFFFFF;
 }
 
+.addemp{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px;
+gap: 8px;
+
+width: 155px;
+height: 39px;
+
+/* Style */
+color:white;
+background: #262626;
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.addproj{
+  /* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px;
+gap: 8px;
+
+width: 130px;
+height: 39px;
+
+/* Style */
+color: white;
+background: #262626;
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}

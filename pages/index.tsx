@@ -75,7 +75,7 @@ const Home: NextPage = () => {
          <div className={styles.pass}>
           <label>Minimun 8 characters with at least 1 number</label>
           </div>
-          <button type="submit" className={styles.button}>Login</button>
+          <button type="submit" className={styles.button} onClick={getlogin}>Login</button>
          <div className={styles.link1}>
           <label>By signing in you agree 
           <Link href=''>
