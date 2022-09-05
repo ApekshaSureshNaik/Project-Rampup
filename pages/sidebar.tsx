@@ -20,6 +20,7 @@ const Sidebar = () => {
            src={logo}
            width="50px"
            height="50px"
+           alt='Logo'
             /> <h3 className={styles.h3}> HEALTH</h3>
              <div className={styles.line}></div>
        </li>
