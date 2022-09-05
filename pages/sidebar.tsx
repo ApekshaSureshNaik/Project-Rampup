@@ -46,7 +46,7 @@ const Sidebar = () => {
         width: "14.400001525878906px",
         left: "4.8000030517578125px",
         top: "4px"
-       }}/> <Link href='/admin'>
+       }}/> <Link href='/project'>
          <a className={styles.projectsl}> Projects </a>
          </Link>
        </div>
@@ -60,7 +60,7 @@ const Sidebar = () => {
         left: "18px",
         top: "192px",
        }}
-       /> <Link href='/admin'> 
+       /> <Link href='/employee'> 
        <a className={styles.employeel}> Employees </a></Link>
        </div>
       </li>
@@ -73,7 +73,7 @@ const Sidebar = () => {
         left: "2.400299072265625px",
         top: "2.4000244140625px" 
       }}
-      /><Link href='/admin'>
+      /><Link href='/'>
          <a className={styles.settingl}> Settings </a></Link>
        
       </div>
