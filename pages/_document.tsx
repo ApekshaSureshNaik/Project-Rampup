@@ -29,6 +29,7 @@
 // }
 
 // export default MyDocument;
+
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 
 class MainDocument extends Document {

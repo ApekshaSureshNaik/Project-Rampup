@@ -7,15 +7,30 @@ import Sidebar from './sidebar'
 import styles from '../styles/sidebar.module.css'
 
 const columns: GridColDef[] = [
-    { field: 'id', headerName: 'Project ID', width: 150 },
+    { field: 'id', headerName: 'Employee ID', width: 150 },
     { field: 'name', headerName: 'Name', width: 150 },
-    { field: 'client', headerName: 'Client', width: 250 },
-    { field: 'project_type', headerName: 'Project Type', width: 200 },
-    { field: 'project_res', headerName: 'Project Responsible  ', width: 130} ,
-    { field: 'status_date', headerName: 'Status Date', width: 130 },
-    { field: 'end_date', headerName: 'End Date', width: 130 },
-    { field: 'proj_status', headerName: 'Project Status', width: 130 },
-    { field: 'mon_status', headerName: 'Monthly Status', width: 130 },
+    { field: 'email', headerName: 'Email', width: 250 },
+    { field: 'project_name', headerName: 'Project Name', width: 200,
+    renderCell: (cellValues) =>{ return (
+      <Button variant="outlined" className={styles.empbtn} 
+      // onClick={(event) => {
+      //   handleClick(event, cellValues);
+      // } }
+      > lorem ipsum </Button>
+      );} },
+    { field: 'skills', headerName: 'Skills  ', width: 130,
+     renderCell: (cellValues) =>{ return (
+      <Button variant="outlined" className={styles.empbtn} 
+      // onClick={(event) => {
+      //   handleClick(event, cellValues);
+      // } }
+      > Front End</Button>
+      );}} ,
+    { field: 'emp_type', headerName: 'Employee Type', width: 130 },
+    { field: 'join_date', headerName: 'Joining Date', width: 130 },
+    { field: 'salary', headerName: 'Salary', width: 130 },
+    { field: 'utilization', headerName: 'Utilization', width: 130 },
+    { field: 'revenue', headerName: 'Revenu Opportunity' },
     { field: 'options', headerName: 'Options', width: 130 , 
     renderCell: (cellValues) => 
     { return (<FontAwesomeIcon icon={faEllipsisVertical} style={{position:'absolute', justifyContent:'center'}} /> )}}
@@ -23,20 +38,27 @@ const columns: GridColDef[] = [
 
 
   const rows: GridRowsProp = [
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
-    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' }
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+    { id: 0, name: 'jackson', email:'jackson.jack@econsent.com',project_name:<button className={styles.empbtn}>lorem ipsum</button>,skills:<button className={styles.empbtn}>Front End</button>,emp_type:'lorem ipsum',join_date:'lorem ipsum', salary:'lorem ipsum',utilization:'lorem ipsum',revenue:'lorem ipsum',options:'' },
+
+    
+    
   ];
 
   const Employee = () => {

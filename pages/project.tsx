@@ -5,6 +5,7 @@ import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams } from '@mui/x
 import { Button } from '@mui/material'
 import Sidebar from './sidebar'
 import styles from '../styles/sidebar.module.css'
+import Modal from '../compnents/ModalProject'
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'Project ID', width: 150 },
@@ -84,9 +85,9 @@ const columns: GridColDef[] = [
             placeholder="Search"></input>
              
             <button className={styles.addproj} style={{ marginLeft:"1290px", marginTop:"-20px"}} onClick={() => setShowModal(true)} >+ Add Project</button>
-           
-    
            </div> 
+
+           <Modal show={showModal} onClose={() => setShowModal(false)} >    </Modal>
            <div className={styles.gridh}> 
       
       <DataGrid 

@@ -394,3 +394,21 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+
+.empbtn{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 7px 11px;
+
+position: absolute;
+width: 114px;
+height: 24px;
+left: 844px;
+top: 243px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+}
