@@ -5,6 +5,7 @@ import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams } from '@mui/x
 import { Button } from '@mui/material'
 import Sidebar from './sidebar'
 import styles from '../styles/sidebar.module.css'
+import Modal from '../compnents/ModalEmp'
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'Employee ID', width: 150 },
@@ -107,6 +108,8 @@ const columns: GridColDef[] = [
             <button className={styles.addemp} style={{ marginLeft:"1290px", marginTop:"-20px"}} onClick={() => setShowModal(true)} >+ Add Employee</button>
         
            </div> 
+           <Modal show={showModal} onClose={() => setShowModal(false)} >    </Modal>
+
            <div className={styles.gridh}> 
       
       <DataGrid 

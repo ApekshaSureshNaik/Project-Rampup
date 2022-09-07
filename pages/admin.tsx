@@ -12,7 +12,7 @@ import { faBell ,faEllipsisVertical, faXmark} from '@fortawesome/free-solid-svg-
 //     PagingState
 //   } from '@devexpress/dx-react-grid';
 import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
-import { Button } from '@mui/material'
+import { Chip } from '@mui/material'
 // import { useRouter } from 'next/router'
 // import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'
@@ -25,11 +25,11 @@ const columns: GridColDef[] = [
   { field: 'email', headerName: 'Email', width: 250 },
   { field: 'phone', headerName: 'Phone', width: 200 },
   { field: 'roles', headerName: 'Roles', width: 130,renderCell: (cellValues) =>{ return (
-    <Button variant="outlined" className={styles.adminbtn} 
+    <Chip variant="outlined" className={styles.adminbtn} 
     // onClick={(event) => {
     //   handleClick(event, cellValues);
     // } }
-    > Admin </Button>
+    />
     );}} ,
   { field: 'status', headerName: 'Status', width: 130 },
   { field: 'options', headerName: 'Options', width: 130 , 

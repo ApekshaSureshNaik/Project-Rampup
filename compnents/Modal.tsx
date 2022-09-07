@@ -47,7 +47,6 @@ const Modal = ({ show, onClose, children } :ModalProp) => {
         <FontAwesomeIcon icon={faXmark} className={styles.btn} onClick={handleClose}/>
         <label style={{ position: "absolute",
         // width:"112px",
-
        width:"150px",  height: "33px",left: "410px", top: "160px", fontFamily: 'Inter,sans-serif',
         fontStyle: "normal", fontWeight: "600", fontSize: "22px", lineHeight: "150%", color: "#111928",marginTop:"-100px",marginLeft:"-370px"
       }}> Invite User </label>
