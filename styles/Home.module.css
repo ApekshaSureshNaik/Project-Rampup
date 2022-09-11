@@ -1,9 +1,8 @@
-
 .main {
-   /* position: absolute;
-   width:676px;
-   height:901px;   */
-   position: relative;
+  /* position: absolute;
+  width:676px;
+  height:901px;   */
+  position: relative;
 width: 1440px;
 height: 901px;
 
@@ -84,11 +83,11 @@ background-color: white;
 }
 
 .icon{ 
-  position: absolute;
-  width: 450px;
-  height: 30px;
-  left: 1260px;
-  top: 482px;
+ position: absolute;
+ width: 450px;
+ height: 30px;
+ left: 1260px;
+ top: 482px;
 }
 
 .pass {
@@ -117,7 +116,7 @@ border-radius: 6px;
 border: none;
 color: white;
 font-family: 'Inter', sans-serif;
- 
+
 
 }
 
@@ -153,317 +152,317 @@ color: #1996fc;
 
 /*Forgot Password*/
 .forgot {
-  position: absolute;
-  width: 408px;
-  height: 46px;
-  left: 495px;
-  top: 196px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  color: #212121;
+ position: absolute;
+ width: 408px;
+ height: 46px;
+ left: 495px;
+ top: 196px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 38px;
+ line-height: 46px;
+ color: #212121;
 }
 
 .instruct {
-  position: absolute;
-  width: 451px;
-  height: 58px;
-  left: 495px;
-  top: 247px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
-  color: #212121;
+ position: absolute;
+ width: 451px;
+ height: 58px;
+ left: 495px;
+ top: 247px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 29px;
+ color: #212121;
 }
 .elabel {
-  position: absolute;
-  width: 451px;
-  height: 29px;
-  left: 495px;
-  top: 355px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #212121;
-  opacity: 0.4;
+ position: absolute;
+ width: 451px;
+ height: 29px;
+ left: 495px;
+ top: 355px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 12px;
+ line-height: 15px;
+ color: #212121;
+ opacity: 0.4;
 }
 
 .einput {
-  position: absolute;
-  width: 450px;
-  height: 2px;
-  left: 496px;
-  top: 434px;
-  background: #212121;
-  opacity: 0.3;
-  border: none;
-  border-bottom: solid 2px grey;
-  background-color: white;
-  font-family: 'Inter', sans-serif;
+ position: absolute;
+ width: 450px;
+ height: 2px;
+ left: 496px;
+ top: 434px;
+ background: #212121;
+ opacity: 0.3;
+ border: none;
+ border-bottom: solid 2px grey;
+ background-color: white;
+ font-family: 'Inter', sans-serif;
 }
 
 .send {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
-  position: absolute;
-  width: 450px;
-  height: 50px;
-  left: 496px;
-  top: 496px;
-  background: #1996FC;
-  border-radius: 6px;
-  border: none;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ text-align: center;
+ color: #FFFFFF;
+ position: absolute;
+ width: 450px;
+ height: 50px;
+ left: 496px;
+ top: 496px;
+ background: #1996FC;
+ border-radius: 6px;
+ border: none;
 }
 
 .cancel {
-  position: absolute;
-  width: 47px;
-  height: 17px;
-  left: 698px;
-  top: 572px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  background: #FFFFFF;
-  color: #555656;
+ position: absolute;
+ width: 47px;
+ height: 17px;
+ left: 698px;
+ top: 572px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 17px;
+ text-align: center;
+ background: #FFFFFF;
+ color: #555656;
 }
 
 .back {
-  position: absolute;
-  width: 34px;
-  height: 17px;
-  left: 88px;
-  top: 58px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #A6A6A6;
+ position: absolute;
+ width: 34px;
+ height: 17px;
+ left: 88px;
+ top: 58px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ color: #A6A6A6;
 }
 
 /*Check email*/
 
 .checkyourmail {
-  position: absolute;
-  width: 318px;
-  height: 46px;
-  left: 495px;
-  top: 196px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  color: #212121;
+ position: absolute;
+ width: 318px;
+ height: 46px;
+ left: 495px;
+ top: 196px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 38px;
+ line-height: 46px;
+ color: #212121;
 }
 
 .instruction {
-  position: absolute;
-  width: 451px;
-  height: 58px;
-  left: 495px;
-  top: 247px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
-  color: #212121;
+ position: absolute;
+ width: 451px;
+ height: 58px;
+ left: 495px;
+ top: 247px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 29px;
+ color: #212121;
 }
 
 .ques {
-  position: absolute;
-  width: 451px;
-  height: 29px;
-  left: 495px;
-  top: 326px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
-  color: #212121;
+ position: absolute;
+ width: 451px;
+ height: 29px;
+ left: 495px;
+ top: 326px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 29px;
+ color: #212121;
 }
 
 /*Set New Password */
 .title2 {
-  position: absolute;
-  width: 338px;
-  height: 46px;
-  left: 495px;
-  top: 196px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  color: #212121;
+ position: absolute;
+ width: 338px;
+ height: 46px;
+ left: 495px;
+ top: 196px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 38px;
+ line-height: 46px;
+ color: #212121;
 }
 
 .instruct1 {
-  position: absolute;
-  width: 400px;
-  height: 58px;
-  left: 495px;
-  top: 247px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
-  color: #212121;
+ position: absolute;
+ width: 400px;
+ height: 58px;
+ left: 495px;
+ top: 247px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 29px;
+ color: #212121;
 }
 
 .password1 {
-  position: absolute;
-  width: 57px;
-  height: 15px;
-  left: 495px;
-  top: 365px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #212121;
-  opacity: 0.4;
+ position: absolute;
+ width: 57px;
+ height: 15px;
+ left: 495px;
+ top: 365px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 12px;
+ line-height: 15px;
+ color: #212121;
+ opacity: 0.4;
 }
 
 .passwordInput1 {
-  position: absolute;
-  width: 450px;
-  height: 30px;
-  left: 496px;
-  top: 418px;
-  color: black;
-  background: white;
-  opacity: 60%;
-  border:none;
-  border-bottom: solid 2px rgb(114, 112, 112);
-  font-family: 'Inter', sans-serif;
+ position: absolute;
+ width: 450px;
+ height: 30px;
+ left: 496px;
+ top: 418px;
+ color: black;
+ background: white;
+ opacity: 60%;
+ border:none;
+ border-bottom: solid 2px rgb(114, 112, 112);
+ font-family: 'Inter', sans-serif;
 
 }
 
 .icon1{ 
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 920px;
-  top: 418px;
+ position: absolute;
+ width: 200px;
+ height: 30px;
+ left: 920px;
+ top: 418px;
 }
 .passwordrequire1 {
-  position: absolute;
-  width: 300px;
-  height: 17px;
-  left: 495px;
-  top: 455px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #212121;
-  opacity: 0.4;
+ position: absolute;
+ width: 300px;
+ height: 17px;
+ left: 495px;
+ top: 455px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 17px;
+ color: #212121;
+ opacity: 0.4;
 }
 
 .password2 {
-  position: absolute;
-  width: 57px;
-  height: 15px;
-  left: 495px;
-  top: 518px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #212121;
-  opacity: 0.4;
+ position: absolute;
+ width: 57px;
+ height: 15px;
+ left: 495px;
+ top: 518px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 12px;
+ line-height: 15px;
+ color: #212121;
+ opacity: 0.4;
 }
 
 .passwordInput2 {
-  position: absolute;
-  width: 450px;
-  height: 17px;
-  left: 496px;
-  top: 584px;
-  font-style: normal;
-  font-family: 'Inter', sans-serif;
-  background: #212121;
-  opacity: 0.6;
-  background: white;
-  border:none;
-  border-bottom: solid 2px rgb(73, 73, 73);
+ position: absolute;
+ width: 450px;
+ height: 17px;
+ left: 496px;
+ top: 584px;
+ font-style: normal;
+ font-family: 'Inter', sans-serif;
+ background: #212121;
+ opacity: 0.6;
+ background: white;
+ border:none;
+ border-bottom: solid 2px rgb(73, 73, 73);
 }
 
 .icon2{ 
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 920px;
-  top: 570px;
+ position: absolute;
+ width: 200px;
+ height: 30px;
+ left: 920px;
+ top: 570px;
 }
 .passwordrequire2 {
-  position: absolute;
-  width: 185px;
-  height: 17px;
-  left: 495px;
-  top: 608px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #212121;
-  opacity: 0.4;
+ position: absolute;
+ width: 185px;
+ height: 17px;
+ left: 495px;
+ top: 608px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 17px;
+ color: #212121;
+ opacity: 0.4;
 }
 
 .ResetPassword {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
-  position: absolute;
-  width: 450px;
-  height: 50px;
-  left: 496px;
-  top: 676px;
-  border:none;
-  background: #1996FC;
-  border-radius: 6px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ text-align: center;
+ color: #FFFFFF;
+ position: absolute;
+ width: 450px;
+ height: 50px;
+ left: 496px;
+ top: 676px;
+ border:none;
+ background: #1996FC;
+ border-radius: 6px;
 }
 
 .cancel1 {
-  position: absolute;
-  width: 47px;
-  height: 17px;
-  left: 698px;
-  top: 746px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #555656;
+ position: absolute;
+ width: 47px;
+ height: 17px;
+ left: 698px;
+ top: 746px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 17px;
+ text-align: center;
+ color: #555656;
 }
 
 
@@ -471,42 +470,42 @@ color: #1996fc;
 
 /*Rest Password*/
 .passreset {
-  position: absolute;
-  width: 300px;
-  height: 46px;
-  left: 495px;
-  top: 196px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  color: #212121;
+ position: absolute;
+ width: 300px;
+ height: 46px;
+ left: 495px;
+ top: 196px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 38px;
+ line-height: 46px;
+ color: #212121;
 }
 
 .success {
-  position: absolute;
-  width: 451px;
-  height: 29px;
-  left: 495px;
-  top: 250px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
-  color: #212121;
+ position: absolute;
+ width: 451px;
+ height: 29px;
+ left: 495px;
+ top: 250px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 29px;
+ color: #212121;
 }
 .continue {
-  border:none;
-  color: #ffffff;
-  position: absolute;
-  width: 450px;
-  height: 50px;
-  left: 496px;
-  top: 400px;
-  background: #1996FC;
-  box-shadow: 0px 0px 4px rgba(39, 41, 44, 0.16);
-  font-family: 'Inter', sans-serif;
-  border-radius: 6px;
+ border:none;
+ color: #ffffff;
+ position: absolute;
+ width: 450px;
+ height: 50px;
+ left: 496px;
+ top: 400px;
+ background: #1996FC;
+ box-shadow: 0px 0px 4px rgba(39, 41, 44, 0.16);
+ font-family: 'Inter', sans-serif;
+ border-radius: 6px;
 }

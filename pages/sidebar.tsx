@@ -73,7 +73,8 @@ const Sidebar = () => {
         left: "2.400299072265625px",
         top: "2.4000244140625px" 
       }}
-      /><Link href='/'>
+      />
+      <Link href='/'>
          <a className={styles.settingl}> Settings </a></Link>
        
       </div>

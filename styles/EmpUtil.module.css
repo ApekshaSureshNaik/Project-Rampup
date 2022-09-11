@@ -1,0 +1,165 @@
+.name1{
+    position: absolute;
+    width: 42px;
+    height: 14px;
+    left: 10px;
+    top: 90px;
+    display: flex;
+    font-weight:bold;
+    }
+
+.name2{
+    position: absolute;
+    height: 14px;
+    left: 420px;
+    top: 90px;
+    display: flex;
+    font-weight:bold;
+}
+
+.month{
+    position: absolute;
+    height: 14px;
+    left: 10px;
+    top: 180px;
+    display: flex;
+    font-weight:bold;
+}
+
+.year{
+    
+        position: absolute;
+        height: 14px;
+        left: 360px;
+        top: 180px;
+        display: flex;
+        font-weight:bold;
+    }
+
+.sal{
+    position: absolute;
+    height: 14px;
+    left: 10px;
+    top: 270px;
+    display: flex;
+    font-weight:bold;
+}
+
+.total{
+    position: absolute;
+    height: 14px;
+    left: 240px;
+    top: 270px;
+    display: flex;
+    font-weight:bold;
+}
+
+.loss{
+    position: absolute;
+    height: 14px;
+    left: 450px;
+    top: 270px;
+    display: flex;
+    font-weight:bold;
+}
+
+.projname{
+    position: absolute;
+    height: 14px;
+    left: 10px;
+    top: 350px;
+    display: flex;
+    font-weight:bold;
+}
+
+.proj{
+    width:270px;
+    height:40px;
+    margin-top:40px;
+    margin-left: -5px;
+}
+
+.projname1{
+    position: absolute;
+    height: 14px;
+    left: 10px;
+    top: 430px;
+    display: flex;
+    font-weight:bold;
+}
+
+.proj1{
+    width:270px;
+    height:40px;
+    margin-top:40px;
+    margin-left: -5px;
+}
+
+.util{
+    position: absolute;
+    height: 14px;
+    left: 310px;
+    top: 350px;
+    display: flex;
+    font-weight:bold;
+}
+
+
+
+.util1{
+    position: absolute;
+    height: 14px;
+    left: 310px;
+    top: 430px;
+    display: flex;
+    font-weight:bold;
+}
+
+
+
+.add{
+   
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    position: absolute;
+    width: 140px;
+    height: 42px;
+    left: -159px;
+    top: 720px;
+    font-weight: bold;
+}
+
+.cancel{     
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 9px 17px;
+            font-family: 'Inter',sans-serif;
+            font-style: normal;
+            position: absolute;
+            width: 88px;
+            height: 42px;
+            left: 214px;
+            top: 1068px;
+            font-weight: bold;
+}
+
+.save{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 9px 17px;
+            font-family: 'Inter',sans-serif;
+            font-style: normal;
+            position: absolute;
+            width: 88px;
+            height: 42px;
+            left: 324px;
+            top: 1068px;
+            font-weight: bold;
+
+}
+

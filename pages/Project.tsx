@@ -6,23 +6,26 @@ import logo from  '../images/logo.jpg'
 import Image from 'next/image'
 import CssBaseline from '@mui/material/CssBaseline';
 import styles from '../styles/SideBar.module.css'
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Link from 'next/link';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { color } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { DataGrid, GridRowsProp, GridColDef, GridRenderCellParams, GridColumnIcon, GridRowModel, GridColumns, GridRowId } from '@mui/x-data-grid'
 import { AppBar, Avatar, Button, Chip, Toolbar } from '@mui/material'
-import Option from './OptionAdmin'
-import Modal from './AdminModal'
-import DoneIcon from '@mui/icons-material/Done'
+import Option from './OptionProject'
+import Modal from './ProjectModal'
 
 const drawerWidth = 250;
 
@@ -69,50 +72,37 @@ const openedMixin = (theme: Theme): CSSObject => ({
       width: `calc(${theme.spacing(8)} + 1px)`,
     },
   });
-
-
+ 
   const columns: GridColDef[] = [
-    { field: 'id', headerName: 'User ID', width: 150 },
+    { field: 'id', headerName: 'Project ID', width: 150 },
     { field: 'name', headerName: 'Name', width: 150 },
-    { field: 'email', headerName: 'Email', width: 250 },
-    { field: 'phone', headerName: 'Phone', width: 200 },
-    { field: 'roles', headerName: 'Roles', width: 130,
-    renderCell: (params : any) =>{
-       return (
-      <Chip 
-      label={params.row.role}
-      variant="outlined" 
-      className={styles.adminbtn} 
-      />
-      );}} ,
-    { field: 'status', headerName: 'Status', width: 130,
-    renderCell:(params) =>{
-      return (
-        <DoneIcon fontSize='small' sx={{color:'#77F6'}}/>
-      )
-
-    } },
-    { field: 'options', headerName: 'Options', width: 130 
-     , 
-    renderCell: (cellValues: any) => 
-     { return (<Option /> )}
-  }
+    { field: 'client', headerName: 'Client', width: 250 },
+    { field: 'project_type', headerName: 'Project Type', width: 200 },
+    { field: 'project_res', headerName: 'Project Responsible  ', width: 130} ,
+    { field: 'status_date', headerName: 'Status Date', width: 130 },
+    { field: 'end_date', headerName: 'End Date', width: 130 },
+    { field: 'proj_status', headerName: 'Project Status', width: 130 },
+    { field: 'mon_status', headerName: 'Monthly Status', width: 130 },
+    { field: 'options', headerName: 'Options', width: 130 , 
+    renderCell: () => 
+    { return (<Option/> )}}
   ];
-  
-  
+
   const rows: GridRowsProp = [
-    { id: 110, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: '',status:'',options:'' },
-    { id: 1, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 2, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 3, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 4, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 5, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 6, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 7, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 8, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 9, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-    { id: 10, name: 'jackson', email: 'jackson.jack@econsent.com', phone:'+1(415)425-5588', roles: <button className={styles.adminbtn}>Admin</button>,status:'',options:'' },
-  
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' },
+    { id: 0, name: 'jackson', client: 'Michael David', project_type:'lorem ipsum',project_res:'lorem ipsum',status_date:'01 Aug 2022',end_date:'24 Sep 2022',proj_status:'',mon_status:'',options:'' }
   ];
 
   const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -133,14 +123,9 @@ const openedMixin = (theme: Theme): CSSObject => ({
     }),
   );
 
-const Admin =() => {
-  
-
-  const[openViewModal,setopenViewModal]=React.useState(false)
+const Project =() => {
   const [showModal,setShowModal] =React.useState(false)
     // const theme = useTheme();
-    const[dropDown,setdropDown]=React.useState("false")
-    const [anchorEl, setAnchorEl] = React.useState(null);
     const [open, setOpen] = React.useState(false);
   
     const handleDrawerOpen = () => {
@@ -150,19 +135,6 @@ const Admin =() => {
     const handleDrawerClose = () => {
       setOpen(false);
     };
-    const handleClick = (event:any) => { 
-      setAnchorEl(event.currentTarget); 
-    }; 
-    
-    const show = Boolean(anchorEl); 
-    
-    const handleClose = () => { 
-      setAnchorEl(null); 
-    }; 
-
-    const handlemodal=()=>{
-      setopenViewModal(true)
-    }
 
   
 const items=[
@@ -247,20 +219,18 @@ const items=[
            fontSize: "18px",
            lineHeight: "50px",
            color:"#111928", marginTop:8
-        }}> Admin Users</Typography>
+        }}> Projects </Typography>
         <input type="text" className={styles.search}
         style={{alignContent:"center", justifyContent:"center",marginLeft:200, marginTop:60 }} 
         placeholder="Search"></input>
-        <Button className={styles.button} style={{ marginLeft:"1290px", marginTop:"-50px"}} onClick={()=>setShowModal(true)}>+ Add User</Button>
-        <Divider style={{position:"relative",width:1500,bottom:-20}}/>
-
+        <Button className={styles.button} style={{ marginLeft:"1290px", marginTop:"-50px"}} onClick={()=>setShowModal(true)}>+ Add Project</Button>
         <Modal show={showModal} onClose={() => setShowModal(false)} >    </Modal>
-
-      <DataGrid 
-      sx={{position:"absolute", 
-      width:"1339px",height:"650px", marginTop:"40px",
-       "& .MuiTablePagination-toolbar":
-        {
+        <Divider style={{position:"relative",width:1500,bottom:-20}}/>
+        <DataGrid 
+         sx={{position:"absolute", 
+         width:"1339px",height:"650px", marginTop:"40px",
+         "& .MuiTablePagination-toolbar":
+         {
         display:"flex",
         marginRight:"1200px"
         },
@@ -285,12 +255,10 @@ const items=[
       pageSize={10}
       
        />
-     
           </Box>
         </Box>
-        
       );
     }
-export default Admin
+export default Project
 
 
